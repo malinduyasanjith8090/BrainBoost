@@ -1,5 +1,4 @@
 // app/src/screens/BrainGames.tsx
-import { PALETTE } from "@/app/design/colors";
 import { RootStackParamList } from "@/app/navigation/AppNavigator";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -39,14 +38,14 @@ const BrainGames = () => {
       difficulty: "Easy",
       screen: "AttentionGame",
     },
-    {
-      id: 4,
-      title: "Puzzle",
-      icon: "🧩",
-      description: "Logic problems",
-      difficulty: "Hard",
-      screen: "PuzzleGame",
-    },
+  {
+  id: 4,
+  title: "Puzzle",
+  icon: "🧩",
+  description: "Logic problems",
+  difficulty: "Hard",
+  screen: "PuzzleQuiz", // ✅ not "PuzzleGame"
+},
   ];
 
   // Map difficulty to consistent colors
